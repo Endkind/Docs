@@ -1,0 +1,30 @@
+input: .
+output: .retype
+
+url: docs.endkind.net
+
+start:
+  # Uncomment the next line to try Retype Pro features
+  # pro: true
+
+branding:
+  title: EnderDocs
+  label: Docs
+  logo: static/logo.png
+
+footer:
+  copyright: "&copy Endkind {{  year }}. [Endkind](https://github.com/Endkind) All rights reserved."
+  links:
+    - text: ":icon-law: License"
+      link: https://github.com/Endkind/Docs/blob/main/LICENSE
+
+edit:
+  repo: https://github.com/Endkind/Docs
+  label: Edit on GitHub
+
+editor:
+  enabled: true
+
+exclude:
+  - "*example*"
+  - "*template*"
