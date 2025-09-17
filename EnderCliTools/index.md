@@ -1,8 +1,8 @@
 ---
-date: 2025-09-16
+date: 2025-09-17
 category: [EnderCliTools]
 tags: [rust]
-description: Lorem Ipsum
+description: EnderCliTools is a lightweight collection of CLI utilities that make working in the terminal faster and more convenient.
 icon: terminal
 
 author:
@@ -13,4 +13,24 @@ author:
 
 # EnderCliTools
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+EnderCliTools is a lightweight collection of CLI utilities that make working in the terminal faster and more convenient.
+
+## Available Commands
+
+### [dps](./dps)
+
+Pretty replacement for `docker ps`
+
+---
+
+### [dcps](./dcps)
+
+Pretty replacement for `docker compose ps`
+
+---
+
+### [config](./config)
+
+Configuration management utility for handling application settings and preferences.
+
+---
