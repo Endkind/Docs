@@ -25,7 +25,7 @@ Pretty replacement for `docker ps`
 
 ### [dcps](./dcps)
 
-Pretty replacement for `docker ps`
+Pretty replacement for `docker compose ps`
 
 ---
 
