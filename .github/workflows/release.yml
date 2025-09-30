@@ -13,7 +13,29 @@ jobs:
       contents: write
 
     steps:
+      - name: Get latest release tag
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        id: latest_release
+        run: |
+          set -e
+          RESPONSE=$(curl -s -w "%{http_code}" https://api.github.com/repos/${{ github.repository }}/releases/latest)
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -c 4)
+          BODY=$(echo "$RESPONSE" | head -c -4)
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+            echo "Error: Failed to fetch latest release (HTTP $HTTP_STATUS)"
+            exit 1
+          fi
+          LATEST_TAG=$(echo "$BODY" | jq -r '.tag_name')
+          if [ -z "$LATEST_TAG" ] || [ "$LATEST_TAG" = "null" ]; then
+            echo "Error: Could not extract tag_name from response"
+            exit 1
+          fi
+          echo "tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          echo "Latest release tag: $LATEST_TAG"
+
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && steps.latest_release.outputs.tag || '' }}
 
       - name: Fetch Releases Notes
         run: |
