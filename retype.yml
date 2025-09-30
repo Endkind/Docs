@@ -13,7 +13,7 @@ branding:
   logo: static/logo.png
 
 footer:
-  copyright: "&copy Endkind {{  year }}. [Endkind](https://github.com/Endkind) All rights reserved."
+  copyright: "&copy; Endkind {{ year }}. [Endkind](https://github.com/Endkind) All rights reserved."
   links:
     - text: ":icon-law: License"
       link: https://github.com/Endkind/Docs/blob/main/LICENSE
