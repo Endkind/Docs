@@ -10,3 +10,17 @@ author:
 ---
 
 # EnderDocs
+
+## Projects
+
+### [EnderCliTools](./EnderCliTools)
+
+Lightweight collection of CLI utilities that make working in the terminal faster and more convenient.
+
+---
+
+### [Laravel Setup Action](./laravel-setup-action)
+
+GitHub Action to install PHP via php.new and run composer install for Laravel projects.
+
+---
