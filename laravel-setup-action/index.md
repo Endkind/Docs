@@ -78,9 +78,9 @@ name: Laravel CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   pull_request:
-    branches: [main]
+    branches: [main, master]
 
 jobs:
   test:
@@ -102,7 +102,9 @@ jobs:
 ```yaml
 name: Multi-Version Test
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
 
 jobs:
   test:
@@ -121,28 +123,6 @@ jobs:
 
       - name: Run tests
         run: php artisan test
-```
-
-### Windows Runner Support
-
-```yaml
-name: Windows Build
-
-on: [push]
-
-jobs:
-  build:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup PHP on Windows
-        uses: endkind/laravel-setup-action@v1
-        with:
-          php-version: "8.4"
-
-      - name: Build application
-        run: php artisan optimize
 ```
 
 ---
