@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826948729842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827034423228">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Get</title>
@@ -25,14 +25,20 @@
     <meta property="og:site_name" content="EnderDocs">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://docs.endkind.net/enderclitools/config/get/">
+    <meta name="twitter:title" content="Get">
+    <meta name="twitter:description" content="Get configuration options for EnderCliTools">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../../resources/css/retype.css?v=4.2.0.826948729842" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.3.0.827034423228" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826948729842" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826948729842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826948729842" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827034423228" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827034423228" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.3.0.827034423228" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -47,10 +53,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://docs.endkind.net/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="../../../static/logo.png">
-                            <img class="max-h-10 hidden dark:inline-block" src="../../../static/logo.png">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../../static/logo.png" alt="" width="460" height="460">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../../static/logo.png" alt="" width="460" height="460">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">EnderDocs</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -126,12 +132,7 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="get" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#get">#</doc-anchor-trigger>
-        <span>Get</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="get">Get</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
     <div class="flex items-center">
         <div>By</div>
@@ -151,50 +152,25 @@
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Get configuration options for EnderCliTools</div>
 <p>Get configuration options for EnderCliTools. This command allows you to view current settings for table display and dps output.</p>
-<doc-anchor-target id="usage">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#usage">#</doc-anchor-trigger>
-        <span>Usage</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="usage">Usage</h2>
 <div id="usage-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">ect config get [COMMAND] [OPTIONS]</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="subcommands">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#subcommands">#</doc-anchor-trigger>
-        <span>Subcommands</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="subcommands">Subcommands</h2>
 <ul>
 <li><doc-anchor-trigger to="#table"><code translate="no" v-pre>table</code></doc-anchor-trigger> - Show table configuration</li>
 <li><doc-anchor-trigger to="#dps"><code translate="no" v-pre>dps</code></doc-anchor-trigger> - Show dps configuration</li>
 </ul>
 <hr>
-<doc-anchor-target id="table">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#table">#</doc-anchor-trigger>
-        <span>table</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="table">table</h2>
 <p>Show the current table style and modifiers.</p>
-<doc-anchor-target id="options">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="options">Options</h3>
 <ul>
 <li><code translate="no" v-pre>-a, --all</code> - Show all available table configuration options</li>
 <li><code translate="no" v-pre>--preset</code> - Show only the table preset</li>
 <li><code translate="no" v-pre>--modifier</code> - Show only the table modifier</li>
 </ul>
-<doc-anchor-target id="example">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#example">#</doc-anchor-trigger>
-        <span>Example</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="example">Example</h3>
 <div id="example-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-powershell"><code v-pre class="language-powershell">PS C:\Users\endki&gt; ect config get table
 ╭────────────────┬──────────────────╮
@@ -206,29 +182,14 @@
 ╰────────────────┴──────────────────╯</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="dps">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dps">#</doc-anchor-trigger>
-        <span>dps</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="dps">dps</h2>
 <p>Show the current default headers (columns) for the <code translate="no" v-pre>dps</code> command.</p>
-<doc-anchor-target id="options-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#options-1">#</doc-anchor-trigger>
-        <span>Options</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="options-1">Options</h3>
 <ul>
 <li><code translate="no" v-pre>-a, --all</code> - Show all available dps configuration options</li>
 <li><code translate="no" v-pre>--headers</code> - Show only the dps headers</li>
 </ul>
-<doc-anchor-target id="example-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#example-1">#</doc-anchor-trigger>
-        <span>Example</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="example-1">Example</h3>
 <div id="example-1-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-powershell"><code v-pre class="language-powershell">PS C:\Users\endki&gt; ect config get dps
 ╭────────────────┬───────────────────────────────────╮
@@ -238,19 +199,9 @@
 ╰────────────────┴───────────────────────────────────╯</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="all-configuration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#all-configuration">#</doc-anchor-trigger>
-        <span>All configuration</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="all-configuration">All configuration</h2>
 <p>Show all configuration options.</p>
-<doc-anchor-target id="example-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#example-2">#</doc-anchor-trigger>
-        <span>Example</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="example-2">Example</h3>
 <div id="example-2-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-powershell"><code v-pre class="language-powershell">PS C:\Users\endki&gt; ect config get
 ╭────────────────┬───────────────────────────────────╮
@@ -264,12 +215,7 @@
 ╰────────────────┴───────────────────────────────────╯</code></pre>
 </doc-codeblock></div>
 <hr>
-<doc-anchor-target id="help">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#help">#</doc-anchor-trigger>
-        <span>Help</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="help">Help</h2>
 <ul>
 <li><code translate="no" v-pre>help</code> - Print this message or the help of the given subcommand(s)</li>
 <li><code translate="no" v-pre>-h, --help</code> - Print help</li>

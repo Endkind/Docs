@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826948729842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827034423228">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Config</title>
@@ -25,14 +25,20 @@
     <meta property="og:site_name" content="EnderDocs">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://docs.endkind.net/enderclitools/config/">
+    <meta name="twitter:title" content="Config">
+    <meta name="twitter:description" content="Configuration management for EnderCliTools - manage settings and preferences">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=4.2.0.826948729842" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.3.0.827034423228" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.2.0.826948729842" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.2.0.826948729842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.2.0.826948729842" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.3.0.827034423228" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.3.0.827034423228" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.3.0.827034423228" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -47,10 +53,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://docs.endkind.net/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="../../static/logo.png">
-                            <img class="max-h-10 hidden dark:inline-block" src="../../static/logo.png">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../static/logo.png" alt="" width="460" height="460">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../static/logo.png" alt="" width="460" height="460">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">EnderDocs</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -126,12 +132,7 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="config" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#config">#</doc-anchor-trigger>
-        <span>Config</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="config">Config</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
     <div class="flex items-center">
         <div>By</div>
@@ -151,12 +152,7 @@
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Configuration management for EnderCliTools - manage settings and preferences</div>
 <p>Configuration management for EnderCliTools. This command allows you to manage settings and preferences for the various tools.</p>
-<doc-anchor-target id="usage">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#usage">#</doc-anchor-trigger>
-        <span>Usage</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="usage">Usage</h2>
 <p>The config command can be executed in two ways:</p>
 <div id="usage-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash"># Full command
@@ -165,12 +161,7 @@ enderclitools config &lt;COMMAND&gt;
 # Short alias
 ect config &lt;COMMAND&gt;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="subcommands">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#subcommands">#</doc-anchor-trigger>
-        <span>Subcommands</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="subcommands">Subcommands</h2>
 <p>The config command has the following subcommands:</p>
 <ul>
 <li><a href="set/"><code translate="no" v-pre>set</code></a> - Set configuration values</li>
@@ -178,12 +169,7 @@ ect config &lt;COMMAND&gt;</code></pre>
 <li><a href="reset/"><code translate="no" v-pre>reset</code></a> - Reset configuration to defaults</li>
 <li><code translate="no" v-pre>help</code> - Print help message or help for specific subcommand</li>
 </ul>
-<doc-anchor-target id="examples">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
-        <span>Examples</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="examples">Examples</h2>
 <div id="examples-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-powershell"><code v-pre class="language-powershell"># Get help for the config command
 PS C:\Users\endki&gt; ect config --help
@@ -193,12 +179,7 @@ PS C:\Users\endki&gt; ect config set --help
 PS C:\Users\endki&gt; ect config get --help
 PS C:\Users\endki&gt; ect config reset --help</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="configuration-structure">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configuration-structure">#</doc-anchor-trigger>
-        <span>Configuration Structure</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="configuration-structure">Configuration Structure</h2>
 <p>EnderCliTools stores its configuration in a structured format that allows you to customize the behavior of various tools like <code translate="no" v-pre>dps</code>, <code translate="no" v-pre>dcps</code>, and others. Each tool can have its own specific settings while sharing common configuration options.</p>
 <p>See the individual subcommand documentation for detailed usage examples and available configuration options.</p>
 
