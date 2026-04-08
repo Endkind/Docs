@@ -1,0 +1,29 @@
+﻿# EnderDocs
+
+> Welcome to the Documentation from Endkind
+
+- [EnderDocs](https://docs.endkind.net/index.md): EnderDocs
+- [EnderCliTools](https://docs.endkind.net/enderclitools/index.md): EnderCliTools is a lightweight collection of CLI utilities that make working in the terminal faster and more convenient.
+
+## EnderCliTools
+
+- [dps](https://docs.endkind.net/enderclitools/dps.md): Pretty replacement for docker ps - displays Docker containers in a nicely formatted table
+- [dcps](https://docs.endkind.net/enderclitools/dcps.md): Pretty replacement for docker compose ps - displays Docker Compose services in a nicely formatted table
+
+### Config
+
+- [Config](https://docs.endkind.net/enderclitools/config/index.md): Configuration management for EnderCliTools - manage settings and preferences
+- [Get](https://docs.endkind.net/enderclitools/config/get.md): Get configuration options for EnderCliTools
+- [Reset](https://docs.endkind.net/enderclitools/config/reset.md): Reset configuration options for EnderCliTools
+- [Set](https://docs.endkind.net/enderclitools/config/set.md): Set configuration options for EnderCliTools
+
+### Releases
+
+- [Releases](https://docs.endkind.net/enderclitools/releases/index.md): v1.2.0 (latest)
+- [v1.2.0](https://docs.endkind.net/enderclitools/releases/v1.2.0.md): feat: add 'dcps' command with config integration; ensure backward-compatible config defaults @Endkind (#13)
+- [v1.1.2](https://docs.endkind.net/enderclitools/releases/v1.1.2.md): fix(deb): enable automatic dependency detection for Ubuntu/Debian packages @Endkind (#11)
+- [v1.1.1](https://docs.endkind.net/enderclitools/releases/v1.1.1.md): maintenance: add pre-commit PR checks workflow (GitHub Actions) @Endkind (#10)
+- [v1.1.0](https://docs.endkind.net/enderclitools/releases/v1.1.0.md): Feat/4 support additional docker ps options in dps command end @Endkind (#8)
+- [v1.0.0](https://docs.endkind.net/enderclitools/releases/v1.0.0.md): Refactor config handling and add header configuration to dps @Endkind (#7)
+- [v0.1.0](https://docs.endkind.net/enderclitools/releases/v0.1.0.md): Add Config for Tables @Endkind (#6)
+- [v0.0.1](https://docs.endkind.net/enderclitools/releases/v0.0.1.md): Init

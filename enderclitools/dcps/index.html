@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828849347336">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.2.828935797090">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.2">
 
     <!-- Primary Meta Tags -->
     <title>dcps</title>
@@ -16,6 +16,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.endkind.net/enderclitools/dcps/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://docs.endkind.net/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -31,14 +32,17 @@
     <meta name="twitter:title" content="dcps">
     <meta name="twitter:description" content="Pretty replacement for docker compose ps - displays Docker Compose services in a nicely formatted table">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://docs.endkind.net/enderclitools/dcps.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=4.4.0.828849347336" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.5.2.828935797090" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828849347336" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828849347336" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.4.0.828849347336" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.2.828935797090" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.2.828935797090" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.5.2.828935797090" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -127,9 +131,11 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="dcps">dcps</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -189,7 +195,8 @@ dcps [OPTIONS]</code></pre>
 </ul>
 <h3 id="table-styling">Table Styling</h3>
 <ul>
-<li><p><code translate="no" v-pre>--table-preset &lt;TABLE_PRESET&gt;</code> - Predefined table styles:</p>
+<li>
+<p><code translate="no" v-pre>--table-preset &lt;TABLE_PRESET&gt;</code> - Predefined table styles:</p>
 <ul>
 <li><code translate="no" v-pre>ascii-full</code> - Full ASCII borders</li>
 <li><code translate="no" v-pre>ascii-full-condensed</code> - Condensed ASCII borders</li>
@@ -206,7 +213,8 @@ dcps [OPTIONS]</code></pre>
 <li><code translate="no" v-pre>nothing</code> - No formatting</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>--table-modifier &lt;TABLE_MODIFIER&gt;</code> - Additional table modifiers:</p>
+<li>
+<p><code translate="no" v-pre>--table-modifier &lt;TABLE_MODIFIER&gt;</code> - Additional table modifiers:</p>
 <ul>
 <li><code translate="no" v-pre>utf8-round-corners</code> - Rounded corners</li>
 <li><code translate="no" v-pre>utf8-solid-inner-borders</code> - Solid inner borders</li>
@@ -215,7 +223,8 @@ dcps [OPTIONS]</code></pre>
 </ul>
 <h3 id="column-configuration">Column Configuration</h3>
 <ul>
-<li><p><code translate="no" v-pre>--headers &lt;HEADERS&gt;</code> - Determines which columns are displayed:</p>
+<li>
+<p><code translate="no" v-pre>--headers &lt;HEADERS&gt;</code> - Determines which columns are displayed:</p>
 <ul>
 <li><code translate="no" v-pre>id</code> - Container ID</li>
 <li><code translate="no" v-pre>service</code> - Service name</li>
@@ -231,7 +240,8 @@ dcps [OPTIONS]</code></pre>
 <li><code translate="no" v-pre>mounts</code> - Volume mounts</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>--add-headers &lt;ADD_HEADERS&gt;</code> - Adds additional columns to the default columns (same options as <code translate="no" v-pre>--headers</code>)</p>
+<li>
+<p><code translate="no" v-pre>--add-headers &lt;ADD_HEADERS&gt;</code> - Adds additional columns to the default columns (same options as <code translate="no" v-pre>--headers</code>)</p>
 </li>
 </ul>
 <h3 id="help">Help</h3>
@@ -370,6 +380,6 @@ dcps --no-orphans</code></pre>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "dcps", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "dcps", level: 2, icon: "file", hasPrism: true, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/enderclitools/dcps.md" }</script>
 </body>
 </html>
